@@ -146,7 +146,7 @@ public class PriceHolder {
     }
 
     /**
-     * @return an Object[] which contais <b>all<b> data point arrays OHLCVI.
+     * @return an Object[] which contains <b>all</b> data point arrays OHLCVI.
      * @see PriceInputParameter overrides this method
      */
     public Object[] toArrays() {
