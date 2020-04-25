@@ -1,0 +1,17 @@
+listen:
+  host: 0.0.0.0
+
+storage:
+  dir: /opt/notebooks
+  mounts:
+    examples:
+      dir: examples
+
+spark:
+  properties:
+    spark.driver.memory: 28g
+    spark.executor.memory: 60g
+    spark.driver.userClasspathFirst: true
+    spark.executor.userClasspathFirst: true
+#  spark_submit_args: "--some --arguments"
+  dist_classpath_filter: hadoop.*\.jar
